@@ -1,0 +1,80 @@
+//import mixins
+@import '_mixins.scss';
+@import '_variable.scss';
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        background-color: $hover-color;
+    }
+}
+
+.cnt-main {
+    @include containerMain();
+    color: $fontColor1;
+
+    .cnt-intro {
+        .title {
+            width: 100%;
+            background-color: $background;
+            font-family: $fontFamily2;
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+
+        p {
+            padding: 0 2.4rem;
+            letter-spacing: 10px;
+        }
+
+    }
+
+    .cnt-propuesta {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        label {
+            text-align: center;
+            margin: 1rem 0;
+
+        }
+    }
+
+    .btn-propuesta {
+        @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);
+
+
+    }
+
+    .cnt-registro {
+        //container register
+        width: 100%;
+        div {
+            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(350px - max-width ), $sizeH: 60px);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+
+            img {
+                max-width: 20px;
+            }
+
+            p {
+                margin: 0 1rem;
+            }
+        }
+    }
+}

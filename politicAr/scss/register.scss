@@ -1,0 +1,78 @@
+//import mixins
+@import '_mixins.scss';
+@import '_variable.scss';
+//header top 100% width
+
+.nav{
+    //nav return and logo
+    @include navRetLogo();
+
+       
+       .title{
+                font-size: 1.5rem;
+                font-family: $fontFamily2;
+                color: $fontColor1;
+       }
+       img{
+        max-width: 60px;
+       }
+
+    }
+
+.cnt-main{
+    @include containerMain();
+    .cnt-registro{
+        //container register
+        width: 100%;
+        .div-input{
+            display: flex;
+            position: relative;
+            margin-bottom: 1rem;
+
+            .lbl-input{
+                position: absolute;
+                color: $fontColor2;
+                top: 1.1rem;
+                left: 1rem;
+                font-size: .9rem;
+                transition: font-size .2s ease, top .2s ease;
+                pointer-events: none;
+ 
+            }
+            input{
+                @include btn-opcion($color: $fontColor2,$fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+                height: 2.5rem;
+                &:focus{
+                    background-color: $hover-color;
+                    outline: none;
+                    + .lbl-input {
+                        background-color: $hover-color;
+                        font-size: .6rem;
+                        top: .5rem;
+                    }
+                }
+                width: 100%;
+            }
+            
+        }
+        .div-terms{
+            .checkbox{
+                height: 1rem;
+            }
+
+        }
+        .div-btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            button{
+                width: 100%;
+                @include btn-opcion($color: $blue2,$fntColor: $fontColor1 , $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+                height: 2.5rem;
+                &:hover{
+                    background-color: $hover-color;
+                }
+            }
+        }
+    }
+}

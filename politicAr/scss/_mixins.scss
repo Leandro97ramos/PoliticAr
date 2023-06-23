@@ -1,0 +1,84 @@
+//mixins nav
+// Path: politicAr\scss\_mixins.scss
+// Compare this snippet from politicAr\scss\style.scss:
+// //import variables from './variables.scss';
+@mixin nav() {
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  1rem;    
+    padding-right: 1rem;
+}
+
+@mixin navMenuLogo() {
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  1rem;    
+    padding-right: 1rem;
+}
+
+@mixin containerMain() {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin navRetLogo() {
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  1rem;    
+    padding-right: 1rem;
+    .title{
+        font-size: 1.5rem;
+        font-family: $fontFamily2;
+        color: $fontColor1;
+    }
+    img{
+    max-width: 33px
+    }
+}
+
+@mixin btn-post($color1, $fontColor1){
+    width: 33%;
+    height: 44px;
+    margin-top: 1rem;
+    background-color: $color1;
+    border-radius: 10px;
+    color: $fontColor1;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+@mixin btn-opcion($color,$fntColor , $hover-color, $sizeW, $sizeH) {
+    width: $sizeW;
+    height: $sizeH;
+
+    border: 2px solid $color;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: $fntColor;
+    cursor: pointer;
+    &:hover{
+        background-color: $hover-color;
+
+        img{
+            background-color: $hover-color;
+        }
+        p{
+            background-color: $hover-color;
+        }
+    }
+}
+
+

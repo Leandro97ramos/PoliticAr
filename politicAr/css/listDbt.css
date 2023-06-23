@@ -1,0 +1,141 @@
+.nav {
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+}
+.nav img {
+  max-width: 33px;
+}
+
+.cnt-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-filtro {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cnt-filtros {
+  width: 100%;
+  display: flex;
+}
+.cnt-filtros .filtro {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #B3B5B7;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #B3B5B7;
+  cursor: pointer;
+}
+.cnt-filtros .filtro:hover {
+  background-color: #fff;
+}
+.cnt-filtros .filtro:hover img {
+  background-color: #fff;
+}
+.cnt-filtros .filtro:hover p {
+  background-color: #fff;
+}
+.cnt-filtros .busqueda {
+  display: flex;
+  flex-direction: row;
+}
+.cnt-filtros .busqueda .btn-busqueda img {
+  max-width: 10px;
+}
+
+.accordion {
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.cnt-posts {
+  margin-top: 5rem;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Altura deseada del shadow */
+  box-shadow: 0px -15px 46px 0px #04042C;
+}
+
+hr {
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cnt-posts {
+  height: 100vh;
+}
+
+#post {
+  position: relative;
+  margin-bottom: 1.2rem;
+  height: 12.5rem;
+  transition: height 0.5s ease-in;
+  z-index: 100;
+}
+#post hr {
+  background-color: #ffffff;
+}
+#post .panel-heading {
+  display: flex;
+  justify-content: space-between;
+  color: #B3B5B7;
+  font-size: 0.8em;
+}
+#post .panel-heading .autor-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#post .panel-heading .autor-date .autor {
+  margin-right: 10px;
+}
+#post .panel-heading .autor-date .date {
+  font-size: 0.8em;
+}
+#post .cnt-votar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#post .cnt-votar button {
+  width: 33%;
+  height: 44px;
+  margin-top: 1rem;
+  background-color: #EB1B1B;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#post.active {
+  height: 27em;
+  transition: height 0.5s ease-in;
+}

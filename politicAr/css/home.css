@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav a:hover {
+  background-color: #04042C;
+}
+
+.cnt-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.cnt-main .cnt-intro .title {
+  width: 100%;
+  background-color: #1D1D20;
+  font-family: "inter", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.cnt-main .cnt-intro p {
+  padding: 0 2.4rem;
+  letter-spacing: 10px;
+}
+.cnt-main .cnt-propuesta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cnt-main .cnt-propuesta label {
+  text-align: center;
+  margin: 1rem 0;
+}
+.cnt-main .btn-propuesta {
+  width: calc(max-width);
+  height: 60px;
+  border: 2px solid #B3B5B7;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #B3B5B7;
+  cursor: pointer;
+}
+.cnt-main .btn-propuesta:hover {
+  background-color: #04042C;
+}
+.cnt-main .btn-propuesta:hover img {
+  background-color: #04042C;
+}
+.cnt-main .btn-propuesta:hover p {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro {
+  width: 100%;
+}
+.cnt-main .cnt-registro div {
+  width: calc(350px - max-width);
+  height: 60px;
+  border: 2px solid #B3B5B7;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #B3B5B7;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.cnt-main .cnt-registro div:hover {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro div:hover img {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro div:hover p {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro div img {
+  max-width: 20px;
+}
+.cnt-main .cnt-registro div p {
+  margin: 0 1rem;
+}

@@ -1,0 +1,110 @@
+.nav {
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+}
+.nav img {
+  max-width: 33px;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+}
+.nav img {
+  max-width: 60px;
+}
+
+.cnt-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cnt-main .cnt-registro {
+  width: 100%;
+}
+.cnt-main .cnt-registro .div-input {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cnt-main .cnt-registro .div-input .lbl-input {
+  position: absolute;
+  color: #B3B5B7;
+  top: 1.1rem;
+  left: 1rem;
+  font-size: 0.9rem;
+  transition: font-size 0.2s ease, top 0.2s ease;
+  pointer-events: none;
+}
+.cnt-main .cnt-registro .div-input input {
+  width: calc(max-width);
+  height: 60px;
+  border: 2px solid #B3B5B7;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #B3B5B7;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 100%;
+}
+.cnt-main .cnt-registro .div-input input:hover {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-input input:hover img {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-input input:hover p {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-input input:focus {
+  background-color: #04042C;
+  outline: none;
+}
+.cnt-main .cnt-registro .div-input input:focus + .lbl-input {
+  background-color: #04042C;
+  font-size: 0.6rem;
+  top: 0.5rem;
+}
+.cnt-main .cnt-registro .div-terms .checkbox {
+  height: 1rem;
+}
+.cnt-main .cnt-registro .div-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.cnt-main .cnt-registro .div-btn button {
+  width: 100%;
+  width: calc(max-width);
+  height: 60px;
+  border: 2px solid #0765D1;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  height: 2.5rem;
+}
+.cnt-main .cnt-registro .div-btn button:hover {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-btn button:hover img {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-btn button:hover p {
+  background-color: #04042C;
+}
+.cnt-main .cnt-registro .div-btn button:hover {
+  background-color: #04042C;
+}

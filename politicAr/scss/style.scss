@@ -1,0 +1,14 @@
+@import '_mixins.scss';
+@import '_variable.scss';
+
+*{
+    background-color: $background;
+    font-family: $fontFamily2;
+    color: $fontColor1;
+}
+.t1{
+    color: $blue;
+}
+.t2{
+    color: $yellow;
+}
