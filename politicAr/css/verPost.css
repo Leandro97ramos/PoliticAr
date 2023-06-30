@@ -1,0 +1,451 @@
+.nav {
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+}
+.nav img {
+  max-width: 33px;
+}
+
+.cnt-main .contenido {
+  border-bottom: 1px solid #fff;
+}
+.cnt-main .votos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cnt-main .votos img {
+  max-width: 27px;
+}
+.cnt-main .cnt-voto-aprobacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.categorias .title {
+  margin-right: 1rem;
+}
+.categorias .cnt-etiqueta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+.categorias .cnt-etiqueta .point {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.categorias .cnt-etiqueta #economia {
+  background-color: #22aa55;
+}
+.categorias .cnt-etiqueta #historia {
+  background-color: #F6B40E;
+}
+.categorias .cnt-etiqueta #educacion {
+  background-color: #5566aa;
+}
+.categorias .cnt-etiqueta h4 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #B3B5B7;
+}
+
+/*ESTADISTICAS*/
+.cnt-est {
+  width: 100%;
+  position: relative;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.cnt-est * {
+  box-sizing: border-box;
+}
+.cnt-est:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 7.5%;
+  transform: translateX(100%);
+  width: 4px;
+  background: #fff;
+  height: 86%;
+  border-radius: 2px;
+}
+.cnt-est .part {
+  display: flex;
+  height: 3em;
+}
+.cnt-est .part > .label {
+  flex: 1;
+  flex-basis: 25%;
+  text-align: right;
+  padding-right: 1em;
+  margin: 0.5em 0;
+  height: 2em;
+  line-height: 2em;
+  font-weight: 600;
+}
+.cnt-est .part .bar {
+  flex: 3;
+  flex-basis: 75%;
+  position: relative;
+  margin: 0.5em 0;
+}
+.cnt-est .part .bar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0 2px 2px 0;
+  animation: grow 0.5s;
+}
+.cnt-est .part .bar.red:after {
+  background: #EB1B1B;
+}
+.cnt-est .part .bar.blue:after {
+  background: #5566aa;
+}
+.cnt-est .part .bar.green:after {
+  background: #4EA37C;
+}
+.cnt-est .part .bar.yellow:after {
+  background: #e2cb75;
+}
+.cnt-est .part .bar .label {
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  transform: translateX(0%) translateY(-50%);
+  z-index: 1;
+  color: #fff;
+  font-weight: 600;
+}
+.cnt-est .part.percent-1 .bar:after {
+  width: 2%;
+}
+.cnt-est .part.percent-2 .bar:after {
+  width: 4%;
+}
+.cnt-est .part.percent-3 .bar:after {
+  width: 6%;
+}
+.cnt-est .part.percent-4 .bar:after {
+  width: 8%;
+}
+.cnt-est .part.percent-5 .bar:after {
+  width: 10%;
+}
+.cnt-est .part.percent-6 .bar:after {
+  width: 12%;
+}
+.cnt-est .part.percent-7 .bar:after {
+  width: 14%;
+}
+.cnt-est .part.percent-8 .bar:after {
+  width: 16%;
+}
+.cnt-est .part.percent-9 .bar:after {
+  width: 18%;
+}
+.cnt-est .part.percent-10 .bar:after {
+  width: 20%;
+}
+.cnt-est .part.percent-11 .bar:after {
+  width: 22%;
+}
+.cnt-est .part.percent-12 .bar:after {
+  width: 24%;
+}
+.cnt-est .part.percent-13 .bar:after {
+  width: 26%;
+}
+.cnt-est .part.percent-14 .bar:after {
+  width: 28%;
+}
+.cnt-est .part.percent-15 .bar:after {
+  width: 30%;
+}
+.cnt-est .part.percent-16 .bar:after {
+  width: 32%;
+}
+.cnt-est .part.percent-17 .bar:after {
+  width: 34%;
+}
+.cnt-est .part.percent-18 .bar:after {
+  width: 36%;
+}
+.cnt-est .part.percent-19 .bar:after {
+  width: 38%;
+}
+.cnt-est .part.percent-20 .bar:after {
+  width: 40%;
+}
+.cnt-est .part.percent-21 .bar:after {
+  width: 42%;
+}
+.cnt-est .part.percent-22 .bar:after {
+  width: 44%;
+}
+.cnt-est .part.percent-23 .bar:after {
+  width: 46%;
+}
+.cnt-est .part.percent-24 .bar:after {
+  width: 48%;
+}
+.cnt-est .part.percent-25 .bar:after {
+  width: 50%;
+}
+.cnt-est .part.percent-26 .bar:after {
+  width: 52%;
+}
+.cnt-est .part.percent-27 .bar:after {
+  width: 54%;
+}
+.cnt-est .part.percent-28 .bar:after {
+  width: 56%;
+}
+.cnt-est .part.percent-29 .bar:after {
+  width: 58%;
+}
+.cnt-est .part.percent-30 .bar:after {
+  width: 60%;
+}
+.cnt-est .part.percent-31 .bar:after {
+  width: 62%;
+}
+.cnt-est .part.percent-32 .bar:after {
+  width: 64%;
+}
+.cnt-est .part.percent-33 .bar:after {
+  width: 66%;
+}
+.cnt-est .part.percent-34 .bar:after {
+  width: 68%;
+}
+.cnt-est .part.percent-35 .bar:after {
+  width: 70%;
+}
+.cnt-est .part.percent-36 .bar:after {
+  width: 72%;
+}
+.cnt-est .part.percent-37 .bar:after {
+  width: 74%;
+}
+.cnt-est .part.percent-38 .bar:after {
+  width: 76%;
+}
+.cnt-est .part.percent-39 .bar:after {
+  width: 78%;
+}
+.cnt-est .part.percent-40 .bar:after {
+  width: 80%;
+}
+.cnt-est .part.percent-41 .bar:after {
+  width: 82%;
+}
+.cnt-est .part.percent-42 .bar:after {
+  width: 84%;
+}
+.cnt-est .part.percent-43 .bar:after {
+  width: 86%;
+}
+.cnt-est .part.percent-44 .bar:after {
+  width: 88%;
+}
+.cnt-est .part.percent-45 .bar:after {
+  width: 90%;
+}
+.cnt-est .part.percent-46 .bar:after {
+  width: 92%;
+}
+.cnt-est .part.percent-47 .bar:after {
+  width: 94%;
+}
+.cnt-est .part.percent-48 .bar:after {
+  width: 96%;
+}
+.cnt-est .part.percent-49 .bar:after {
+  width: 98%;
+}
+.cnt-est .part.percent-50 .bar:after {
+  width: 100%;
+}
+.cnt-est .part.percent-51 .bar:after {
+  width: 102%;
+}
+.cnt-est .part.percent-52 .bar:after {
+  width: 104%;
+}
+.cnt-est .part.percent-53 .bar:after {
+  width: 106%;
+}
+.cnt-est .part.percent-54 .bar:after {
+  width: 108%;
+}
+.cnt-est .part.percent-55 .bar:after {
+  width: 110%;
+}
+.cnt-est .part.percent-56 .bar:after {
+  width: 112%;
+}
+.cnt-est .part.percent-57 .bar:after {
+  width: 114%;
+}
+.cnt-est .part.percent-58 .bar:after {
+  width: 116%;
+}
+.cnt-est .part.percent-59 .bar:after {
+  width: 118%;
+}
+.cnt-est .part.percent-60 .bar:after {
+  width: 120%;
+}
+.cnt-est .part.percent-61 .bar:after {
+  width: 122%;
+}
+.cnt-est .part.percent-62 .bar:after {
+  width: 124%;
+}
+.cnt-est .part.percent-63 .bar:after {
+  width: 126%;
+}
+.cnt-est .part.percent-64 .bar:after {
+  width: 128%;
+}
+.cnt-est .part.percent-65 .bar:after {
+  width: 130%;
+}
+.cnt-est .part.percent-66 .bar:after {
+  width: 132%;
+}
+.cnt-est .part.percent-67 .bar:after {
+  width: 134%;
+}
+.cnt-est .part.percent-68 .bar:after {
+  width: 136%;
+}
+.cnt-est .part.percent-69 .bar:after {
+  width: 138%;
+}
+.cnt-est .part.percent-70 .bar:after {
+  width: 140%;
+}
+.cnt-est .part.percent-71 .bar:after {
+  width: 142%;
+}
+.cnt-est .part.percent-72 .bar:after {
+  width: 144%;
+}
+.cnt-est .part.percent-73 .bar:after {
+  width: 146%;
+}
+.cnt-est .part.percent-74 .bar:after {
+  width: 148%;
+}
+.cnt-est .part.percent-75 .bar:after {
+  width: 150%;
+}
+.cnt-est .part.percent-76 .bar:after {
+  width: 152%;
+}
+.cnt-est .part.percent-77 .bar:after {
+  width: 154%;
+}
+.cnt-est .part.percent-78 .bar:after {
+  width: 156%;
+}
+.cnt-est .part.percent-79 .bar:after {
+  width: 158%;
+}
+.cnt-est .part.percent-80 .bar:after {
+  width: 160%;
+}
+.cnt-est .part.percent-81 .bar:after {
+  width: 162%;
+}
+.cnt-est .part.percent-82 .bar:after {
+  width: 164%;
+}
+.cnt-est .part.percent-83 .bar:after {
+  width: 166%;
+}
+.cnt-est .part.percent-84 .bar:after {
+  width: 168%;
+}
+.cnt-est .part.percent-85 .bar:after {
+  width: 170%;
+}
+.cnt-est .part.percent-86 .bar:after {
+  width: 172%;
+}
+.cnt-est .part.percent-87 .bar:after {
+  width: 174%;
+}
+.cnt-est .part.percent-88 .bar:after {
+  width: 176%;
+}
+.cnt-est .part.percent-89 .bar:after {
+  width: 178%;
+}
+.cnt-est .part.percent-90 .bar:after {
+  width: 180%;
+}
+.cnt-est .part.percent-91 .bar:after {
+  width: 182%;
+}
+.cnt-est .part.percent-92 .bar:after {
+  width: 184%;
+}
+.cnt-est .part.percent-93 .bar:after {
+  width: 186%;
+}
+.cnt-est .part.percent-94 .bar:after {
+  width: 188%;
+}
+.cnt-est .part.percent-95 .bar:after {
+  width: 190%;
+}
+.cnt-est .part.percent-96 .bar:after {
+  width: 192%;
+}
+.cnt-est .part.percent-97 .bar:after {
+  width: 194%;
+}
+.cnt-est .part.percent-98 .bar:after {
+  width: 196%;
+}
+.cnt-est .part.percent-99 .bar:after {
+  width: 198%;
+}
+.cnt-est .part.percent-100 .bar:after {
+  width: 200%;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+}

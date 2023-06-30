@@ -1,0 +1,184 @@
+@import '_mixins.scss';
+@import '_variable.scss';
+
+
+.nav {
+   //nav return and logo
+   @include navRetLogo();
+}
+
+.cnt-main {
+   //main content
+
+   .contenido {
+
+      border-bottom: 1px solid $fontColor1;
+   }
+
+   .votos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+         max-width: 27px;
+      }
+   }
+
+   .cnt-voto-aprobacion {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+   }
+}
+
+.categorias {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
+   
+   .title {
+      margin-right: 1rem;
+   }
+
+   .cnt-etiqueta {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 1rem;
+
+
+      .point {
+         width: .4rem;
+         height: .4rem;
+         border-radius: 50%;
+         margin-right: 0.5rem;
+
+
+         
+      }
+      #economia{
+         background-color: $green2;
+      }
+      #historia{
+         background-color: $yellow;
+
+      }
+      #educacion{
+         background-color: $blue3;
+      }
+
+      h4 {
+         margin: 0;
+         font-size: .8rem;
+         color: $fontColor2;
+      }
+   }
+}
+
+
+
+
+/*ESTADISTICAS*/
+.cnt-est {
+   width: 100%;
+   position: relative;
+   padding: 1em;
+   border-radius: 5px;
+   font-size: 16px;
+
+   * {
+      box-sizing: border-box;
+   }
+
+   // the line
+   &:after {
+      content: '';
+      position: absolute;
+      left: 25%;
+      top: 7.5%;
+      transform: translateX(100%);
+      width: 4px;
+      background: $fontColor1;
+      height: 86%;
+      border-radius: 2px;
+   }
+
+   .part {
+      display: flex;
+      height: 3em;
+
+      >.label {
+         flex: 1;
+         flex-basis: 25%;
+         text-align: right;
+         padding-right: 1em;
+         margin: 0.5em 0;
+         height: 2em;
+         line-height: 2em;
+         //color: $fontColor1;
+         font-weight: 600;
+      }
+
+      .bar {
+         flex: 3;
+         flex-basis: 75%;
+         position: relative;
+         margin: 0.5em 0;
+
+         &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 0 2px 2px 0;
+            animation: grow 0.5s;
+         }
+
+         // the colors!
+         &.red:after {
+            background: $red;
+         }
+
+         &.blue:after {
+            background: $blue3;
+         }
+
+         &.green:after {
+            background: $green;
+         }
+
+         &.yellow:after {
+            background: $yellow3;
+         }
+
+         .label {
+            position: absolute;
+            top: 50%;
+            left: 0.5em;
+            transform: translateX(0%) translateY(-50%);
+            z-index: 1;
+            color: $fontColor1;
+            font-weight: 600;
+
+         }
+      }
+
+      @for $i from 1 through 100 {
+         &.percent-#{$i} .bar:after {
+            width: $i * 2%;
+         }
+      }
+   }
+}
+
+@keyframes grow {
+   from {
+      width: 0;
+   }
+}

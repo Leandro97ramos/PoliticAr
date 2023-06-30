@@ -1,14 +1,12 @@
 //import mixins
 @import '_mixins.scss';
 @import '_variable.scss';
-//header top 100% width
+
 
 .nav{
     //nav return and logo
     @include navRetLogo();
 
-       
-  
 
     }
 

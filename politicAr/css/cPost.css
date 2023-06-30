@@ -1,0 +1,70 @@
+.nav {
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+}
+.nav img {
+  max-width: 33px;
+}
+
+.cnt-main {
+  display: flex;
+  flex-direction: column;
+}
+.cnt-main .cnt-content {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.cnt-main .cnt-content h2 {
+  margin-bottom: 2px;
+}
+.cnt-main .cnt-content textarea {
+  resize: none;
+}
+.cnt-main .addCont {
+  display: flex;
+  flex-direction: column;
+}
+.cnt-main .addCont .inp {
+  border: none;
+  border-bottom: 1px solid #B3B5B7;
+  border-top: 1px solid #B3B5B7;
+  height: 33px;
+}
+.cnt-main .addCont .inp::-moz-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.cnt-main .addCont .inp::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.cnt-main .btn-submit {
+  width: calc(max-width);
+  height: 50px;
+  border: 2px solid #0765D1;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #B3B5B7;
+  cursor: pointer;
+}
+.cnt-main .btn-submit:hover {
+  background-color: #04042C;
+}
+.cnt-main .btn-submit:hover img {
+  background-color: #04042C;
+}
+.cnt-main .btn-submit:hover p {
+  background-color: #04042C;
+}

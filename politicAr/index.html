@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <nav class="nav">
-            <a>Guia de uso</a>
-            <a>Iniciar sesion</a>
+            <a href="./pages/useGuide.html">Guia de uso</a>
+            <a href="./pages/login.html">Iniciar sesion</a>
         </nav>
     </header>
-    
+
     <div class="cnt-main">
         <div class="cnt-intro">
             <div class="title">
                 <h1>Politic<strong class="t1">A</strong><strong class="t2">r</strong></h1>
             </div>
-            <p>sé la revolucion quieres ver en el mundo.</p>
+            <p>sé el cambio que quieres ver en la Argentina</p>
         </div>
 
         <div class="cnt-propuesta">
             <label for="btn-propuesta">descubre algunas de nuestras propuestas</label>
-            <button class="btn-propuesta">
-                propuestas gratuitas
-            </button>
+            <a class="btn-propuesta" href="./pages/postVotacion.html">
+                propuestas vigentes
+            </a>
         </div>
 
         <div class="cnt-registro">
             <div class="gmail">
-                <img src="./assets/gmail.png" alt=""> <p>Gmail</p>
+                <img src="./assets/gmail.png" alt="">
+                <p>Gmail</p>
             </div>
             <div class="facebook">
-                <img src="./assets/facebook.png" alt=""><p>facebook</p>
+                <img src="./assets/facebook.png" alt="">
+                <p>facebook</p>
             </div>
-            <div class="correo">
-                <img src="./assets/email.png" alt=""> <p>Correo</p>
-            </div>
+            <a href="./pages/register.html">
+                <div class="correo">
+                    <img src="./assets/email.png" alt="">
+                    <p>Correo</p>
+                </div>
+            </a>
         </div>
     </div>
 
 </body>
+
 </html>

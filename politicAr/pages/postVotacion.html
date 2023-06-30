@@ -1,0 +1,153 @@
+       <!-- <div class="opt-menu">
+                    <a><img id="close" src="../assets/close.png" alt="" srcset=""></a>
+                    <a href="">Internacional</a>
+                    <a href="">Economia</a>
+                    <a href="">Publicas</a>
+                    <a href="">Leyes existentes</a>
+                    <a href="">Seguridad</a>
+                    <a href="">Educacion</a>
+                    <a href="">Historia</a>
+                    <a href="">Debates</a>
+                    <a href="">Perfil</a>
+                    <a href="">Cerrar sesion</a>
+                </div>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/listDbt.css">
+    <title>debates</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img id="hambr" class="active" src="../assets/menu.png" alt="">
+            <div id="menu" class="menu">
+        
+                <div id="opt-menu" class="opt-menu">
+                    <a><img id="close" src="../assets/close.png" alt="" srcset=""></a>
+                    <a href="./cPost.html">Realizar Post</a>
+                    <a href="./postVotacion.html">Votaciones vigentes</a>
+                    <a href="./post.html">Post de usuarios</a>
+                    <a href="./statusAccount.html">Perfil</a>
+                    <a href="../index.html" id="cerrarSesion">Cerrar sesion</a>
+                </div>
+
+            </div>
+            <div class="title">
+                <h1>Politic<strong class="t1">A</strong><strong class="t2">r</strong></h1>
+            </div>
+        </nav>
+    </header>
+    <div class="cnt-main">
+
+        <div class="cnt-posts">
+            <div class="cnt-filtros">
+                <div class="filtro">
+                    <a class="btn-filtro">Filtro</a>
+                    <a class="btn-filtro">Tiempo</a>
+                </div>
+                <div class="busqueda">
+
+                    <input type="text" placeholder="Buscar" class="input-busqueda">
+                    <button class="btn-busqueda"><img src="../assets/search.png" alt="" srcset=""></button>
+
+                </div>
+
+            </div>
+
+            <div class="accordion">
+                <div id="post">
+                    <div class="panel-heading">
+                        <div class="autor-date">
+                            <p class="autor"><strong>Nombre del autor</strong></p>
+                            <p class="date">4d</p>
+                        </div>
+                        <div>
+                            <div class="point-eco"></div>
+                            <p class="etiqueta">Economia</p>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <!--Title and content article-->
+
+                        <div class="title-article">
+                            <h2>Titulo del articulo</h2>
+                        </div>
+
+                        <div class="content-article">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Dignissimos modi repellat quo eum nam quae expedita libero pariatur?
+                                Laboriosam et mollitia perferendis quia harum consequuntur modi consequatur, hic
+                                quos odio.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Dignissimos modi repellat quo eum nam quae expedita libero pariatur?
+                                Laboriosam et mollitia perferendis quia harum consequuntur modi consequatur, hic
+                                quos odio.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cnt-votar">
+                        <a class="btn-votar">Votar</a>
+                    </div>
+                    <div class="shadow"></div>
+                    <hr>
+
+
+                </div>
+
+                <div id="post">
+                    <div class="panel-heading">
+                        <div class="autor-date">
+                            <p class="autor"><strong>Nombre del autor</strong></p>
+                            <p class="date">4d</p>
+                        </div>
+                        <div>
+                            <div class="point-eco"></div>
+                            <p class="etiqueta">Economia</p>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <!--Title and content article-->
+
+                        <div class="title-article">
+                            <h2>Titulo del articulo</h2>
+                        </div>
+
+                        <div class="content-article">
+                            <p>Lorem ipsum dolor sit amet conse</p>
+                        </div>
+
+                    </div>
+                    <div class="cnt-votar">
+                        <a class="btn-votar">Votar</a>
+                    </div>
+                    <div class="shadow"></div>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="errorVotarPost">
+        <div class="cnt-err" id="cnt-err">
+            <h4 class="alert-heading">¿Quieres que se debata este proyecto?</h4>
+            <p>¡necesitas ser un usuario autenticado!</p>
+            <a  class="btn" href="./statusAccount.html">Autenticar</a>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="../js/main.js"></script>
+
+</html>

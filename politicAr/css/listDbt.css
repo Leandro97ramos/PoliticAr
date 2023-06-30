@@ -38,26 +38,44 @@
 .cnt-filtros .filtro {
   display: flex;
   flex-direction: row;
-  width: 100px;
+}
+.cnt-filtros .filtro a {
+  width: 60px;
   height: 30px;
   border: 2px solid #B3B5B7;
   border-radius: 10px;
   font-size: 1.2rem;
   color: #B3B5B7;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
 }
-.cnt-filtros .filtro:hover {
+.cnt-filtros .filtro a:hover {
   background-color: #fff;
 }
-.cnt-filtros .filtro:hover img {
+.cnt-filtros .filtro a:hover img {
   background-color: #fff;
 }
-.cnt-filtros .filtro:hover p {
+.cnt-filtros .filtro a:hover p {
   background-color: #fff;
 }
 .cnt-filtros .busqueda {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+.cnt-filtros .busqueda input {
+  border: none;
+  width: 33%;
+}
+.cnt-filtros .busqueda .btn-busqueda {
+  border: none;
+  background: none;
+  position: relative;
+  right: 10px;
 }
 .cnt-filtros .busqueda .btn-busqueda img {
   max-width: 10px;
@@ -125,7 +143,7 @@ hr {
   flex-direction: column;
   align-items: center;
 }
-#post .cnt-votar button {
+#post .cnt-votar a {
   width: 33%;
   height: 44px;
   margin-top: 1rem;
@@ -134,8 +152,55 @@ hr {
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #post.active {
   height: 27em;
   transition: height 0.5s ease-in;
+}
+
+#errorVotarPost {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+  background: rgba(24, 22, 22, 0.7176470588);
+}
+#errorVotarPost .cnt-err {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 3%;
+  top: 25%;
+  padding: 0 1rem;
+}
+#errorVotarPost .cnt-err .err {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+  padding: 1rem;
+  transition: background-color 0.2s ease;
+}
+#errorVotarPost .cnt-err .btn {
+  width: 33%;
+  height: 44px;
+  margin-top: 1rem;
+  background-color: #0765D1;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }

@@ -7,9 +7,6 @@
   text-decoration: none;
   font-size: 1.2rem;
 }
-.nav a:hover {
-  background-color: #04042C;
-}
 
 .cnt-main {
   width: 100%;
@@ -28,9 +25,10 @@
 }
 .cnt-main .cnt-intro p {
   padding: 0 2.4rem;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
 }
 .cnt-main .cnt-propuesta {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -47,6 +45,11 @@
   font-size: 1.2rem;
   color: #B3B5B7;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .cnt-main .btn-propuesta:hover {
   background-color: #04042C;

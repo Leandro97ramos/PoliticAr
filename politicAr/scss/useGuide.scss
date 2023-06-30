@@ -1,0 +1,32 @@
+
+@import '_mixins.scss';
+@import '_variable.scss';
+.nav{
+    @include navRetLogo();
+
+    
+}
+
+
+.cnt-info{
+
+    .title{
+        font-size: 1.5rem;
+        font-family: $fontFamily2;
+        color: $fontColor1;
+        margin-bottom: 1rem;
+        //bold
+        font-weight: 700;
+    }
+    .subtitle{
+        font-size: 1rem;
+        font-family: $fontFamily2;
+        color: $fontColor1;
+        margin-bottom: 1rem;
+        //bold
+        font-weight: 700;
+    }
+    p , li{
+        color: $fontColor2;
+    }
+}

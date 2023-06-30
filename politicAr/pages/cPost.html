@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cPost.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img id="hambr" class="active" src="../assets/menu.png" alt="">
+            <div id="menu" class="menu">
+        
+                <div id="opt-menu" class="opt-menu">
+                    <a><img id="close" src="../assets/close.png" alt="" srcset=""></a>
+                    <a href="./cPost.html">Realizar Post</a>
+                    <a href="./postVotacion.html">Votaciones vigentes</a>
+                    <a href="./post.html">Post de usuarios</a>
+                    <a href="./statusAccount.html">Perfil</a>
+                    <a href="../index.html" id="cerrarSesion">Cerrar sesion</a>
+                </div>
+
+            </div>
+            <div class="title">
+                <h1>Politic<strong class="t1">A</strong><strong class="t2">r</strong></h1>
+            </div>
+        </nav>
+    </header>
+    <div class="cnt-main">
+        <!--User post article-->
+        <div class="cnt-content">
+            <h2>Titulo</h2>
+            
+            <div class="addCont">
+                <textarea type="text" name="title" id="title" class="inp" placeholder="Ingrese el titulo"></textarea>
+            </div>
+
+        </div>
+        <div class="cnt-content">
+            <h2>Categoria</h2>
+            <div class="categoriasAgregadas">
+                <select name="categorias" id="categorias" class="inp">
+                
+                <option value="1">Leyes existentes</option>
+                <option value="2">Seguridad</option>
+                <option value="3">Educacion</option>
+                <option value="4">Historia</option>
+                <option value="5">Debates</option>
+                <option value="6">Politica</option>
+                <option value="7">Economia</option>
+                <option value="8">Salud</option>
+                <option value="9">Ciencia</option>
+
+
+                </select>
+
+            </div>
+            
+            <div class="addCont">
+                <div class="categoriasDisponibles"></div>
+
+            </div> 
+        </div>
+
+        <div class="cnt-content">
+            <h2>Ingrese una introduccion</h2>
+            <div class="addCont">
+                <textarea type="text" class="inp" placeholder="Agregue una introduccion al post"></textarea>
+            </div>
+            
+        </div>
+
+        <div class="cnt-content">
+            <h2>Ingrese la descripcion</h2>
+            <div class="addCont">
+                <textarea type="text" class="inp" placeholder="Informacion del post"></textarea>
+            </div>
+        </div>
+
+        <button class="btn-submit">Crear</button>        
+        
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>

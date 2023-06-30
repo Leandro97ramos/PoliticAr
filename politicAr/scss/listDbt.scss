@@ -5,6 +5,7 @@
 
 .nav {
     @include navRetLogo();
+    
 }
 
 
@@ -27,16 +28,34 @@
         display: flex;
         flex-direction: row;
        
-        @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $fontColor1 , $sizeW: 100px, $sizeH: 30px);
+        a{
+            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $fontColor1 , $sizeW: 60px, $sizeH: 30px);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+        }
 
 
     } 
     .busqueda{
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
+        //style input none
+        input{
+            border: none;
+            width: 33%;
+        }
+
+
         .btn-busqueda{
-            //style none
-            
+            //style button none
+            border: none;
+            background: none;
+            position: relative;
+            right: 10px;            
             img{
                 max-width: 10px;
 
@@ -114,16 +133,63 @@ hr{
         flex-direction: column;
         align-items: center;
 
-        button{ 
+        a{ 
             @include btn-post($color1: $red, $fontColor1: $fontColor1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
     &.active {
         //Expand 
         height: 27em;
-        
         transition: height 0.5s ease-in;
 
     }
 }
+
+
+
+
+#errorVotarPost{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+    background: #181616b7;
+
+    .cnt-err{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 3%;
+        top: 25%;
+        padding: 0 1rem;
+        .err{
+            color: $fontColor1;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+            padding: 1rem;
+            transition: background-color .2s ease;
+        }
+
+        .btn{
+            @include btn-post($color1: $blue2, $fontColor1: $fontColor1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+
+    }
+}
+

@@ -1,0 +1,49 @@
+@import '_mixins.scss';
+@import '_variable.scss';
+
+.nav {
+    //nav return and logo
+    @include navRetLogo();
+}
+
+.cnt-main {
+    display: flex;
+    flex-direction: column;
+
+    .cnt-content {
+
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+
+        h2{
+            margin-bottom: 2px;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+
+
+    .addCont {
+        display: flex;
+        flex-direction: column;
+
+        .inp {
+            //button style none
+            border: none;
+            border-bottom: 1px solid $fontColor2;
+            border-top: 1px solid $fontColor2;
+            height: 33px;
+            &::placeholder {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+        }
+    }
+
+    .btn-submit {
+        @include btn-opcion($color: $blue2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 50px);
+    }
+}

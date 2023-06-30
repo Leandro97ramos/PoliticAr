@@ -1,0 +1,92 @@
+// for display
+
+
+
+
+
+// the chart
+$color-red: #f22;
+$color-blue: #56a;
+$color-green: #2a5;
+$color-label: #FFF;
+$color-background: #222;
+
+.cnt-est{
+   position: relative;
+   padding: 1em;
+   background: $color-background;
+   border-radius: 5px;
+   font-size: 16px;
+   
+   * { box-sizing: border-box; }
+   
+   // the line
+   &:after {
+      content: '';
+      position: absolute;
+      left: 25%;
+      top: 7.5%;
+      transform: translateX(100%);
+      width: 4px;
+      background: #FFF;
+      height: 86%;
+      border-radius: 2px;
+   }
+   
+   .part {
+      display: flex;
+      height: 3em;
+      
+       > .label {
+         flex: 1;
+         flex-basis: 25%;
+         text-align: right;
+         padding-right: 1em;
+         margin: 0.5em 0;
+         height: 2em;
+         line-height: 2em;
+         color: $color-label;
+         font-weight: 600;
+      }
+      
+      .bar {
+         flex: 3;
+         flex-basis: 75%;
+         position: relative;
+         margin: 0.5em 0;
+         
+         &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 0 2px 2px 0;
+            animation: grow 0.5s;
+         }
+         
+         // the colors!
+         &.red:after { background: $color-red; }
+         &.blue:after { background: $color-blue; }
+         &.green:after { background: $color-green; }
+         
+         .label {
+            position: absolute;
+            top: 50%;
+            left: 0.5em;
+            transform: translateX(0%) translateY(-50%);
+            z-index: 1;
+            color: #FFF;
+            font-weight: 600;
+         }
+      }
+      
+      @for $i from 1 through 100 {
+         &.percent-#{$i} .bar:after { width: $i * 1%; }
+      }
+   }
+}
+
+@keyframes grow {
+   from { width: 0; }
+}
