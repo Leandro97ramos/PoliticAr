@@ -31,7 +31,7 @@
  
             }
             input{
-                @include btn-opcion($color: $fontColor2,$fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+                @include btn-opcion($color: $fontColor2,$fntColor: $fontColor2,  $sizeW: calc(max-width), $sizeH: 60px);   
                 height: 2.5rem;
                 &:focus{
                     background-color: $hover-color;
@@ -58,12 +58,27 @@
             margin-top: 1rem;
             button{
                 width: 100%;
-                @include btn-opcion($color: $blue2,$fntColor: $fontColor1 , $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+                @include btn-opcion($color: $blue2,$fntColor: $fontColor1 , $sizeW: calc(max-width), $sizeH: 60px);   
                 height: 2.5rem;
                 &:hover{
                     background-color: $hover-color;
                 }
             }
+        }
+    }
+    .registro-GF{
+        text-align: center;
+        margin: 1rem 0;
+        div{
+            margin: 0 1rem;
+        }
+        img {
+            max-width: 25px;
+        }
+        .cnt-GF{
+            margin: 1rem 0;
+            display: flex;
+            justify-content: space-evenly;
         }
     }
 }

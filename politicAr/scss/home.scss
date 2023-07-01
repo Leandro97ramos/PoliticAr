@@ -36,12 +36,25 @@
         }
 
     }
+    .primero{
+        p{
+            color: $fontColor2;
 
+        }
+        display: none;
+    }
+    #history{
+        width: 100%;
+        
+
+    }
+   
     .cnt-propuesta {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 1rem 0;
         label {
             text-align: center;
             margin: 1rem 0;
@@ -49,7 +62,7 @@
     }
 
     .btn-propuesta {
-        @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);
+        @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $sizeW: calc(max-width), $sizeH: 60px);
         text-decoration: none;
         display: flex;
         flex-direction: column;
@@ -61,7 +74,7 @@
         //container register
         width: 100%;
         div {
-            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(350px - max-width ), $sizeH: 60px);
+            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $sizeW: calc(350px - max-width ), $sizeH: 60px);
             display: flex;
             flex-direction: row;
             justify-content: center;

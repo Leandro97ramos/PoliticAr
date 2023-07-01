@@ -24,10 +24,29 @@
     z-index: 1000;
     display: none;
     .opt-menu{
-
+        
+        #cnt-user{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80px;
+            }
+            #user{
+                color: $fontColor1;
+     
+                hr{
+                    width: 100%;
+                    margin: 1rem 0;
+                    border: 1px solid $fontColor1;
+                }
+            }
+        }
 
         a{
-            color: $fontColor1;
+            display: none;
+            color: $fontColor2;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: 600;

@@ -31,38 +31,56 @@
             <!--Form Register-->
             
             <div class="div-input">
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" class="inp" id="name">
                 <label class="lbl-input" for="name">Nombre</label>
 
             </div>
             <div class="div-input">
-                <input type="text" name="lastname" id="lastname">
+                <input type="text" name="lastname" class="inp" id="lastname">
                 <label class="lbl-input"for="lastname">Apellido</label>
 
             </div>
             <div class="div-input">
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" class="inp" id="email">
                 <label class="lbl-input"for="email">Correo</label>
             </div>
-            <div class="div-input">
-                <input type="password" name="password" id="password">
-                <label class="lbl-input"for="password">Contraseña</label>
+            <div class="div-input" id="cnt-password">
+                <input type="password" name="password" class="inp" id="password" title="Por favor, ingresa tu contraseña" >
+                <label class="lbl-input"for="password">Contraseña</label> 
+                <label class="lbl-error"for="password">Ingresar una contraseña de min 8 caracteres y una mayuscula </label>
+          
             </div>
     
             <div class="div-input">
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" class="inp" id="password">
                 <label class="lbl-input"for="password">Confirmar contraseña</label>
             </div>
 
             <div class="div-terms">
                 <!-- Terms and conditions -->
-                <input type="checkbox" class="checkbox" name="terms" id="terms">
+                <input type="checkbox"  class="inp" name="terms" id="terms">
                 <label for="terms">Acepto los terminos y condiciones</label>    
             </div>
             <div class="div-btn">
-                <button class="btn" href="../pages/posts.html" >Registrarse</button>
+                <button class="btn-submit" href="../pages/posts.html" >Registrarse</button>
             </div>
+        </div>
+
+        <div class="registro-GF">
+            <label for="">Tambien puedes ingresar con:</label>
+            <div class="cnt-GF">
+                <div class="gmail">
+                    <img src="../assets/gmail.png" alt="">
+                </div>
+                <div class="facebook">
+                    <img src="../assets/facebook.png" alt="">
+                </div>
+
+            </div>
+        
         </div>
     </div>
 </body>
+
+<script src="../js/main.js"></script>
 </html>

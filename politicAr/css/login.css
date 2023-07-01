@@ -51,15 +51,6 @@
   height: 2.5rem;
   width: 100%;
 }
-.cnt-main .cnt-registro .div-input input:hover {
-  background-color: #04042C;
-}
-.cnt-main .cnt-registro .div-input input:hover img {
-  background-color: #04042C;
-}
-.cnt-main .cnt-registro .div-input input:hover p {
-  background-color: #04042C;
-}
 .cnt-main .cnt-registro .div-input input:focus {
   background-color: #04042C;
   outline: none;
@@ -91,12 +82,18 @@
 .cnt-main .cnt-registro .div-btn button:hover {
   background-color: #04042C;
 }
-.cnt-main .cnt-registro .div-btn button:hover img {
-  background-color: #04042C;
+.cnt-main .registro-GF {
+  text-align: center;
+  margin: 1rem 0;
 }
-.cnt-main .cnt-registro .div-btn button:hover p {
-  background-color: #04042C;
+.cnt-main .registro-GF div {
+  margin: 0 1rem;
 }
-.cnt-main .cnt-registro .div-btn button:hover {
-  background-color: #04042C;
+.cnt-main .registro-GF img {
+  max-width: 25px;
+}
+.cnt-main .registro-GF .cnt-GF {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -3,26 +3,55 @@
 @import '_variable.scss';
 //header top 100% width
 
-.nav{
+.nav {
     //nav return and logo
     @include navRetLogo();
 
-       
-  
 
+
+
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 9999;
+}
+.registro-GF{
+    text-align: center;
+    margin: 1rem 0;
+    div{
+        margin: 0 1rem;
     }
-
-.cnt-main{
+    img {
+        max-width: 25px;
+    }
+    .cnt-GF{
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.cnt-main {
     @include containerMain();
-    .cnt-registro{
+
+    .cnt-registro {
         //container register
         width: 100%;
-        .div-input{
+   
+    
+        .div-input {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             position: relative;
             margin-bottom: 1rem;
 
-            .lbl-input{
+            .lbl-input {
                 position: absolute;
                 color: $fontColor2;
                 top: 1.1rem;
@@ -30,39 +59,49 @@
                 font-size: .9rem;
                 transition: font-size .2s ease, top .2s ease;
                 pointer-events: none;
- 
+
             }
-            input{
-                @include btn-opcion($color: $fontColor2,$fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+            .lbl-error{
+                color: $fontColor2;
+            }
+            input {
+                @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $sizeW: calc(max-width), $sizeH: 60px);
                 height: 2.5rem;
-                &:focus{
+
+                &:focus {
                     background-color: $hover-color;
                     outline: none;
-                    + .lbl-input {
+
+                    +.lbl-input {
                         background-color: $hover-color;
                         font-size: .6rem;
                         top: .5rem;
                     }
                 }
+
                 width: 100%;
             }
-            
+
         }
-        .div-terms{
-            .checkbox{
+
+        .div-terms {
+            .checkbox {
                 height: 1rem;
             }
 
         }
-        .div-btn{
+
+        .div-btn {
             display: flex;
             justify-content: center;
             margin-top: 1rem;
-            button{
+
+            button {
                 width: 100%;
-                @include btn-opcion($color: $blue2,$fntColor: $fontColor1 , $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 60px);   
+                @include btn-opcion($color: $blue2, $fntColor: $fontColor1 , $sizeW: calc(max-width), $sizeH: 60px);
                 height: 2.5rem;
-                &:hover{
+
+                &:hover {
                     background-color: $hover-color;
                 }
             }

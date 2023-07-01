@@ -60,7 +60,7 @@
 }
 
 
-@mixin btn-opcion($color,$fntColor , $hover-color, $sizeW, $sizeH) {
+@mixin btn-opcion($color,$fntColor , $sizeW, $sizeH) {
     width: $sizeW;
     height: $sizeH;
 
@@ -69,16 +69,7 @@
     font-size: 1.2rem;
     color: $fntColor;
     cursor: pointer;
-    &:hover{
-        background-color: $hover-color;
 
-        img{
-            background-color: $hover-color;
-        }
-        p{
-            background-color: $hover-color;
-        }
-    }
 }
 
 

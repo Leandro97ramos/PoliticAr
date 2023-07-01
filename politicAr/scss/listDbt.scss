@@ -5,58 +5,119 @@
 
 .nav {
     @include navRetLogo();
-    
+
 }
 
+.cnt-etiqueta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
 
+
+    .point {
+       width: .4rem;
+       height: .4rem;
+       border-radius: 50%;
+       margin-right: 0.5rem;
+    }
+    #economia{
+       background-color: $green2;
+    }
+    #historia{
+       background-color: $yellow;
+
+    }
+    #educacion{
+       background-color: $blue3;
+    }
+
+    h4 {
+       margin: 0;
+       font-size: .8rem;
+       color: $fontColor2;
+    }
+ }
 
 .cnt-main {
 
     @include containerMain();
 
 }
-.btn-filtro{
+
+.title-article{
+    h2{
+        padding-top: 1.8rem;
+        margin-bottom: 0;
+    }
+}
+.btn-filtro {
     border: none;
     background: none;
     outline: none;
     cursor: pointer;
+
+
 }
-.cnt-filtros{
+
+.input-busqueda{
+    outline: none;
+}
+select{
+    outline: none;
+    border: none;
+    background: none;
+    color: $fontColor2;
+    font-size: 0.8em;
+    margin-right: 1rem;
+    
+    option:hover{
+        color: $fontColor2;
+    }
+}
+.cnt-filtros {
     width: 100%;
     display: flex;
-    .filtro{
+
+    .filtro {
         display: flex;
         flex-direction: row;
-       
-        a{
-            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2, $hover-color: $fontColor1 , $sizeW: 60px, $sizeH: 30px);
+
+        .btn-filtro {
+            @include btn-opcion($color: $fontColor2, $fntColor: $fontColor2,   $sizeW: 80px, $sizeH: 35px);
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             font-size: 0.8em;
+            margin-right: 1rem;
+            
+            
         }
 
 
-    } 
-    .busqueda{
+    }
+
+    .busqueda {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+
         //style input none
-        input{
+        input {
             border: none;
-            width: 33%;
+            width: 48%;
         }
 
 
-        .btn-busqueda{
+        .btn-busqueda {
             //style button none
             border: none;
             background: none;
             position: relative;
-            right: 10px;            
-            img{
+            right: 10px;
+
+            img {
                 max-width: 10px;
 
             }
@@ -68,42 +129,45 @@
     margin-top: 5rem;
     overflow: hidden;
 }
-.cnt-posts{
+
+.cnt-posts {
     margin-top: 5rem;
 }
 
 
-.shadow{
-    
+.shadow {
+
     position: absolute;
     bottom: -36px;
     left: 0;
     width: 100%;
-    height: 20px; /* Altura deseada del shadow */
-    box-shadow: 0px -15px 46px 0px #04042C;
-    
+    height: 20px;
+    /* Altura deseada del shadow */
+    box-shadow: 0px -15px 10px 0px #1D1D20
+
 }
-hr{
+
+hr {
     position: absolute;
     bottom: -27px;
     left: 0;
     width: 100%;
     background-color: #ffffff;
 }
-.cnt-posts{
+
+.cnt-posts {
     height: 100vh;
 }
+
 #post {
     position: relative;
     margin-bottom: 1.2rem;
     height: 12.5rem;
     transition: height 0.5s ease-in;
     z-index: 100;
-   // box-shadow: 0px -15px 46px 0px #04042C;
+    // box-shadow: 0px -15px 46px 0px #04042C;
 
-    hr {
-        background-color: #ffffff;
-    }
+   
 
     .panel-heading {
         display: flex;
@@ -126,15 +190,23 @@ hr{
         }
     }
 
-  
-    .cnt-votar{
+
+    .cnt-votar {
 
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        a{ 
-            @include btn-post($color1: $red, $fontColor1: $fontColor1);
+        margin: 2rem 0;
+        #historia {
+            @include btn-opcion($color: $yellow3, $fntColor: $fontColor1, $sizeW: 80px, $sizeH: 35px);
+        }
+        #educacion {
+            @include btn-opcion($color: $blue3, $fntColor: $fontColor1, $sizeW: 80px, $sizeH: 35px);
+        }
+        #economia {
+            @include btn-opcion($color: $green2, $fntColor: $fontColor1, $sizeW: 80px, $sizeH: 35px);
+        }
+        a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -143,7 +215,7 @@ hr{
 
     &.active {
         //Expand 
-        height: 27em;
+        height: 30em;
         transition: height 0.5s ease-in;
 
     }
@@ -152,7 +224,7 @@ hr{
 
 
 
-#errorVotarPost{
+#errorVotarPost {
     top: 0;
     left: 0;
     position: absolute;
@@ -162,16 +234,16 @@ hr{
     z-index: 1000;
     background: #181616b7;
 
-    .cnt-err{
+    .cnt-err {
         position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        left: 3%;
-        top: 25%;
+        top: 15%;
         padding: 0 1rem;
-        .err{
+
+        .err {
             color: $fontColor1;
             font-size: 1.2rem;
             font-weight: 600;
@@ -181,15 +253,53 @@ hr{
             transition: background-color .2s ease;
         }
 
-        .btn{
+        .btn {
             @include btn-post($color1: $blue2, $fontColor1: $fontColor1);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1rem;
         }
-        
+
 
     }
 }
 
+/*media queries desktop*/
+@media only screen and (min-width: 991px) {
+    .nav {
+        height: 15vh;
+
+        img {
+            width: 15%;
+        }
+
+        .title {
+            font-size: 1.5em;
+        }
+
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cnt-filtros{
+        display: flex;
+        justify-content: space-evenly;
+    }
+            #post {
+                width: 50%;
+            }
+
+            #errorVotarPost{
+                .cnt-err{
+                    left: 36%;
+                    top: 15%;
+
+                }
+                
+            }
+}

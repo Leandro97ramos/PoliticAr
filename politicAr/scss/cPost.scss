@@ -23,11 +23,9 @@
         }
     }
 
-
     .addCont {
         display: flex;
         flex-direction: column;
-
         .inp {
             //button style none
             border: none;
@@ -39,11 +37,9 @@
                 top: 10px;
                 left: 10px;
             }
-
         }
     }
-
     .btn-submit {
-        @include btn-opcion($color: $blue2, $fntColor: $fontColor2, $hover-color: $hover-color, $sizeW: calc(max-width), $sizeH: 50px);
+        @include btn-opcion($color: $blue2, $fntColor: $fontColor2,  $sizeW: calc(max-width), $sizeH: 50px);
     }
 }

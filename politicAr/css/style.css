@@ -22,8 +22,25 @@
   z-index: 1000;
   display: none;
 }
-.menu .opt-menu a {
+.menu .opt-menu #cnt-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .opt-menu #cnt-user img {
+  width: 80px;
+}
+.menu .opt-menu #cnt-user #user {
   color: #fff;
+}
+.menu .opt-menu #cnt-user #user hr {
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #fff;
+}
+.menu .opt-menu a {
+  display: none;
+  color: #B3B5B7;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;

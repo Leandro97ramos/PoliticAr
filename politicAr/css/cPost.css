@@ -59,12 +59,3 @@
   color: #B3B5B7;
   cursor: pointer;
 }
-.cnt-main .btn-submit:hover {
-  background-color: #04042C;
-}
-.cnt-main .btn-submit:hover img {
-  background-color: #04042C;
-}
-.cnt-main .btn-submit:hover p {
-  background-color: #04042C;
-}

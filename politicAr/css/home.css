@@ -27,11 +27,21 @@
   padding: 0 2.4rem;
   letter-spacing: 4px;
 }
+.cnt-main .primero {
+  display: none;
+}
+.cnt-main .primero p {
+  color: #B3B5B7;
+}
+.cnt-main #history {
+  width: 100%;
+}
 .cnt-main .cnt-propuesta {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 1rem 0;
 }
 .cnt-main .cnt-propuesta label {
   text-align: center;
@@ -51,15 +61,6 @@
   justify-content: center;
   align-items: center;
 }
-.cnt-main .btn-propuesta:hover {
-  background-color: #04042C;
-}
-.cnt-main .btn-propuesta:hover img {
-  background-color: #04042C;
-}
-.cnt-main .btn-propuesta:hover p {
-  background-color: #04042C;
-}
 .cnt-main .cnt-registro {
   width: 100%;
 }
@@ -76,15 +77,6 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-}
-.cnt-main .cnt-registro div:hover {
-  background-color: #04042C;
-}
-.cnt-main .cnt-registro div:hover img {
-  background-color: #04042C;
-}
-.cnt-main .cnt-registro div:hover p {
-  background-color: #04042C;
 }
 .cnt-main .cnt-registro div img {
   max-width: 20px;
